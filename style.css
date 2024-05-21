@@ -1,0 +1,275 @@
+/*CSS s'appliquant à un type de bloc*/
+
+body {
+    background-color: rgba(241, 227, 227, 0.884);
+    color:#292a57;
+    font-family: Skranji, sans-serif;
+    padding: 0px;
+    margin:0px;
+}
+
+
+
+nav{
+    position:fixed ;
+    top:0 ;
+    display:inline-grid ;
+    grid-template-columns: repeat(3, 1fr);
+    align-self : center ;
+    justify-content: center ;
+    width:100% ;
+    text-align:center ;
+    z-index:2 ;
+}
+
+@media(orientation:landscape) {
+    nav{
+        height:5vh;
+    }
+}
+
+nav a{
+    text-decoration:none;
+    color: white;
+    background: #292a57;
+    height:36px;
+    line-height:33px;
+    padding:0 20px;
+    font-size:24px;
+    transition: .5s;
+
+}
+
+nav a:hover{
+    background: #cacad5;
+    color:#292a57 ;
+}
+
+p {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3.5em;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3em;
+    text-align: center;
+    text-decoration: underline;
+    margin:0 !important ;
+    margin-bottom:20px !important ;
+}
+h3 {
+    font-size: 1.5em;
+    text-align: center;
+}
+
+span {
+    font-family: "Lato", Arial, sans-serif;
+}
+
+footer {
+    text-align: center;
+    /*padding: 10px 0;*/
+    background-color:#292a57;
+    color: rgba(241, 227, 227, 0.884);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type=text], textarea, input[type=email] {
+    font-family: "Lato", Arial, sans-serif;
+    background-color: lightgrey;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-right: 0px;
+    margin-left: 0px;
+    resize: vertical;
+}
+/*CSS s'appliquant à une classe*/
+
+.banniere {
+    padding: 15px ;
+    background-image: url(images/ciel.jpg);
+    background-size: cover;
+    background-position:100%;
+    color :#292a57;
+
+}
+
+@media(orientation:landscape){
+    .banniere {
+        height:96vh;
+    }
+}
+@media(orientation:portrait){
+    .banniere {
+        height:30vh;
+    }
+}
+.encadre {
+    border: 1px solid black;
+    padding: 4px;
+    text-align:center;
+    background-color: rgba(211,211,211,0.5);
+    color: black;
+    border-radius:auto;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.porte{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+}
+.imageporte{
+    height: 400px;
+    width:400px;
+    position:relative;
+    display: inline-block;
+}
+.text{
+    position:absolute;
+    left: 20%;
+    top:50%;
+    transition: 0s;
+    text-align:center;
+    opacity:0;
+    text-decoration:underline;
+    color:rgb(206, 22, 22);
+    font-size: 25px;
+}
+.imagepres{
+    width:100%;
+    height:100%;
+    background:rgab(0,0,0,0.6);
+    border-radius:100px ;
+    border: solid 10px rgba(241, 227, 227, 0.884);
+
+}
+/*.logo{
+    width:5%;
+    height:5%;
+    background:rgab(0,0,0,0.6);
+}*/
+
+.logo {
+    width:50px;
+    height:50px;
+}
+
+.imageporte:hover .imagepres{
+    opacity: 0.4;
+    cursor:pointer ;
+}
+.imageporte:hover .text{
+    opacity: 1;
+}
+
+@media(orientation:landscape) {
+    .div_structure {
+        padding-left:10% ;
+        padding-right:10% ;
+    }
+}
+
+@media(orientation:portrait) {
+    .div_structure {
+        padding-left:3% ;
+        padding-right:3% ;
+    }
+}
+
+.container {
+    margin-top:20px ;
+}
+
+/*CSS s'appliquant à un ID*/
+#presentation{
+    padding-top:12vh ;
+    color :#292a57;
+
+}
+@media(orientation:landscape) {
+    #presentation{
+        height:100vh;
+    }
+    #portefolio{
+        height:95vh;
+        padding-top:10vh ;
+    }
+    #contact{
+        padding-top:8vh;
+    }
+}
+@media(orientation:portrait){
+    #presentation{
+        padding-bottom:10vh;
+    }
+    #portefolio{
+        padding-bottom:10vh;
+    }
+
+    
+}
+
+#contact {
+    color :#292a57;
+    padding-bottom:6vh ;
+}
+
+
+#portefolio{
+        color: rgba(241, 227, 227, 0.884);
+    background-color:#292a57;
+}
+
+#corps {
+    height:110px ;
+}
+
+#btn_envoyer {
+    background-color:#292a57;
+    border-radius:50px ;
+    color: rgba(241, 227, 227, 0.884);
+    font-family: Skranji, sans-serif;
+    cursor:pointer ;
+    text-align:center ;
+    font-weight:100 ;
+    font-size:1.5em ;
+    padding-top:1% ;
+    padding-bottom:1%;
+    padding-left:3%;
+    padding-right:3% ;
+}
+
+#btn_envoyer:hover {
+    background: #cacad5;
+    color:#292a57 ;
+}
+
+#btn_linkedin {
+    background-color:#c7ede6;
+    border-radius:50px ;
+    color: #292a57;
+    font-family: "Lato", sans-serif;
+    cursor:pointer ;
+    text-align:center ;
+    font-weight:300 ;
+    padding:0 ;
+}
+
+#btn_linkedin:hover {
+    background: #292a57;
+}

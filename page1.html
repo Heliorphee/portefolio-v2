@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+   <head>
+      <meta charset="utf-8"/>
+      <title> Portfolio - Culetto Jonathan </title>
+      <link href="style.css" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&family=Trade+Winds&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav>
+            <a href="#presentation">Qui-suis je?</a>
+            <a href="#portefolio">Mes Réalisations</a>
+            <a href="#contact">Contact</a>
+         </nav>
+      </header>
+      <div class="banniere">
+         <h1>- Jonathan Culetto -
+         </h1>
+
+         <center><span class="encadre"> Etudiant en informatique</span></center>
+      </div>
+
+      <main>
+
+         <div id="presentation" class="div_structure">
+            <h2>Qui suis-je ?</h2>
+            <p> Passionné d'informatique en reconversion professionnelle, j'ai derrière moi 15 ans dans le monde du commerce. J'ai décidé de prendre ce tournant dans ma arrière pour suivre une passion que j'ai depuis tout jeune. 
+               <br>
+               je compte intégrer une école dans le domaine du numérique pour developper mes compétences et obtenir un diplome de développeur logiciel.
+            </p>
+            <p>Si vous souhaitez en apprendre plus sur moi, n'hésitez pas à me contacter. Vous pouvez également explorer ce site. </p>
+            <p>Vous trouverez ici mon CV mis à jour:</p>
+            <center><a href="Culetto Jonathan - Info.pdf" target="_blank" download="CV Culetto Jonathan">Mon CV à Télécharger</a></center>
+         </div>
+         <div id="portefolio" class="div_structure">
+            <h2><center>Mes Réalisations</center></h2>
+            <p> Découvrez ici les réalisations que j'ai fait depuis mes débuts:</p>
+            <div class="porte">
+               <div class="imageporte">
+                  <center><img class="imagepres" src="images/portefolio.jpg" alt="Page du portefolio"></center>
+                  <center><div class="text">Vous êtes déjà dessus</div></center>
+               </div>
+
+
+            </div>
+         </div>
+         <div id="contact" class="div_structure">
+            <h2>Me contacter</h2>
+            <span> Si vous avez un projet ou que vous souhaitez me recruter, n'hésitez pas à me contacter, via le formulaire ci-dessous.</span><br>
+            <div>
+
+               <span> Vous pouvez aussi me contacter via mon compte Linkedin : </span>
+               <a href="https://www.linkedin.com/in/jonathan-culetto-24459697" target="_blank">
+                  <img  class="logo" src="https://img.icons8.com/clouds/100/000000/linkedin.png">
+               </a>
+            </div>
+
+
+
+            <div class="container">
+               <!--<h3>Formulaire de contact</h3>-->
+               <form>
+                  <label for="nom">Nom & prénom</label>
+                  <input type="text" id="nom" name="nom" placeholder="Votre nom et prénom">
+                  <label for="emailAddress">Email</label>
+                  <input id="emailAddress" type="email" name="email" placeholder="Votre email">
+                  <label for="corps">Message</label>
+                  <textarea id="corps" name="corps" placeholder="Votre message"></textarea>
+                  <center>                  
+                     <button id="btn_envoyer" type="submit" value="Envoyer">Envoyer</button>
+                  </center>
+               </form>
+            </div>
+         </div>
+      </main>
+      <footer>
+         &copy; 2024 Culetto Jonathan. Tous droits réservés.
+      </footer>   
+   </body>
+
+
